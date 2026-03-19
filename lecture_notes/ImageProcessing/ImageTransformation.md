@@ -1,5 +1,4 @@
-## Image Transformation
-
+# Image Transformation
 Image transformation is about **changing the way an image is represented or projected**. It is a crucial concept in **computer vision**.
 
 ### Why We Use Image Transformation
@@ -11,7 +10,6 @@ Image transformation is about **changing the way an image is represented or proj
 
 
 ### Types of Image Transformation
-
 #### 1. Geometric Transformation
 Changes the **position or shape of the image**.
 
@@ -65,12 +63,11 @@ JPEG uses DCT (Discrete Cosine Transform) to remove high-frequency details that 
 
 ---
 
-## 1️⃣ Image Restoration
+## Image Restoration
 
 Image restoration is about **improving the quality of an image that has been degraded**. In real life, images can be corrupted by **noise, blur, or distortions**, and restoration tries to fix these issues.
 
 ### a) Denoising
-
 * **What it is:** Removing unwanted random variations in pixel values called **noise**.
 * **Why it happens:** Noise can come from low-light conditions, sensors, transmission errors, or compression artifacts.
 * **Example:** Imagine you take a photo in a dark room. The image looks grainy.
@@ -93,10 +90,8 @@ Original pixel values in a 3×3 patch:
 * Apply **median filter** → replace the center pixel (250) with the median of neighbors → result 11 or 12
 * The image looks smoother, noise removed.
 
----
 
 ### b) Deblurring
-
 * **What it is:** Restoring sharpness to a blurry image.
 * **Why it happens:** Motion blur (camera shake), out-of-focus lens, or long exposure.
 * **Example:** A moving car captured at night may appear blurry.
@@ -108,7 +103,7 @@ Original pixel values in a 3×3 patch:
 
 ---
 
-## 2️⃣ Image Compression
+## Image Compression
 
 Image compression is about **reducing the size of an image file** while keeping it visually acceptable.
 
@@ -131,19 +126,16 @@ Compression can be **lossy** (some data lost, e.g., JPEG) or **lossless** (no da
 
 ---
 
-## 3️⃣ Locating Structural Features
-
+## Locating Structural Features
 This is about **finding important points or structures in the image**, which is essential for tasks like **recognition, tracking, or 3D reconstruction**.
 
 ### a) Corners
-
 * **What it is:** Points where **two edges meet** or where intensity changes in multiple directions.
 * **Why important:** Corners are very **distinctive**, easy for a computer to detect, and stable across images.
 * **Example:** The corners of a window or roof in a building.
 * **How it works:** Algorithms like **Harris Corner Detector** or **Shi–Tomasi** detect corners by looking for **large intensity changes in multiple directions**.
 
 ### b) Edges
-
 * **What it is:** Boundaries of objects where **pixel intensity changes sharply**.
 * **Why important:** Edges define **shapes** and are crucial for **object recognition**.
 * **Example:** The outline of a coin, the border of a car, or a road in satellite imagery.
